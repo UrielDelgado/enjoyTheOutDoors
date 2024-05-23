@@ -15,7 +15,11 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
+            
         />
+        <script src="enjoy-the-outdoors/scripts/locationData.js"></script>
+        <script src="enjoy-the-outdoors/scripts/nationalParkData.js"></script>
+        <script src="enjoy-the-outdoors/scripts/parkTypeData.js"></script>
     </head>
 
     <body>
@@ -37,12 +41,34 @@
               </nav>
         </header>
         <main>
-            
-        </main>
+          <input type="radio" id="searchByLocation" name="searchType" checked>
+          <label for="searchByLocation">Search by Location</label><br>
+          <input type="radio" id="searchByParkType" name="searchType">
+          <label for="searchByParkType">Search by Park Type</label><br><br>
+      
+          <span id="dropdownLabel">Choose State:</span>
+          <select id="dropdown"></select>
+      
+          <table id="info" class="table">
+              <thead>
+                  <tr class="text-center">
+                      <th scope="col" class="col-2">Location ID</th>
+                      <th scope="col" class="col-2">Name</th>
+                      <th scope="col" class="col-2">Address</th>
+                      <th scope="col" class="col-2">Phone</th>
+                      <th scope="col" class="col-2">URL</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Table body content will be added dynamically -->
+              </tbody>
+          </table>
+      </main>
+      
         <footer>
-            <!-- place footer here -->
+          
         </footer>
-        <!-- Bootstrap JavaScript Libraries -->
+        
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -54,5 +80,6 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="enjoy-the-outdoors/scripts/searchNational.js"></script>
     </body>
 </html>
