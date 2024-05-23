@@ -1,13 +1,15 @@
+
 body {
     background-color: rgb(126, 190, 126);
 }
 
-.navbar-brand{
-    color: white;
-}
 .navbar.navbar-expand-lg.bg-body-tertiary {
     background-color: rgb(26, 107, 35) !important;/* Your styles for elements with all three classes */
     color: white !important;
+}
+
+.navbar-brand{
+    color: white;
 }
 
 .navbar-nav a {
@@ -15,7 +17,22 @@ body {
     /* Additional styles as needed */
 }
 
-h1{
+
+.radio-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.text-center {
     text-align: center;
-    margin-top: 25px;
+}
+
+.col-2 {
+    width: 20%; /* Adjust the width as needed */
 }

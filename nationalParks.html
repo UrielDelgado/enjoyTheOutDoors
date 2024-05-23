@@ -17,6 +17,7 @@
             crossorigin="anonymous"
             
         />
+        <link rel="stylesheet" href="css/nationalParks.css">
         <script src="enjoy-the-outdoors/scripts/locationData.js"></script>
         <script src="enjoy-the-outdoors/scripts/nationalParkData.js"></script>
         <script src="enjoy-the-outdoors/scripts/parkTypeData.js"></script>
@@ -24,31 +25,32 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5502/index.html">Home</a>
-                      <a class="nav-link" href="http://127.0.0.1:5502/nationalParks.html">National Parks</a>
-                      <a class="nav-link" href="http://127.0.0.1:5502/mountains.html">Mountains</a>
-                    </div>
-                  </div>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://127.0.0.1:5502/index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="http://127.0.0.1:5502/nationalParks.html">National Parks</a>
+                  <a class="nav-link" href="http://127.0.0.1:5502/mountains.html">Mountains</a>
                 </div>
-              </nav>
+              </div>
+            </div>
+          </nav>
         </header>
         <main>
+          <div class="radio-group">
           <input type="radio" id="searchByLocation" name="searchType" checked>
           <label for="searchByLocation">Search by Location</label><br>
           <input type="radio" id="searchByParkType" name="searchType">
           <label for="searchByParkType">Search by Park Type</label><br><br>
-      
+        </div>
+        <div class="dropdownContainer">
           <span id="dropdownLabel">Choose State:</span>
           <select id="dropdown"></select>
-      
+        </div>
           <table id="info" class="table">
               <thead>
                   <tr class="text-center">

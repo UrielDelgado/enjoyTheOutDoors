@@ -9,6 +9,23 @@ main {
     align-items: center; /* Centers vertically */
     height: 100vh; /* Full viewport height */
 }
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: rgb(26, 107, 35) !important;/* Your styles for elements with all three classes */
+    color: white !important;
+}
+
+body {
+    background-color: rgb(126, 190, 126);
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-nav a {
+    color: white; /* Set the color to white */
+    /* Additional styles as needed */
+}
 
 #main {
     text-align: center; /* Optional: Center the text inside the container */
