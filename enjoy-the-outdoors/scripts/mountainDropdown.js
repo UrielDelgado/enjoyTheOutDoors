@@ -60,33 +60,3 @@ function populateDropdown() {
     }
   }
 
-
-//     function displayMountains() {
-//     const mountainList = document.getElementById('mountainList');
-//     mountainList.innerHTML = '';
-
-//     mountainsArray.forEach(mountain => {
-//       const card = document.createElement('div');
-//       card.className = 'card mb-4';
-
-//       card.innerHTML = `
-//         <img src="${mountain.img}" class="card-img-top" alt="${mountain.name}">
-//         <div class="card-body">
-//           <h5 class="card-title">${mountain.name}</h5>
-//           <p class="card-text">${mountain.elevation}</p>
-//           <p class="card-text">${mountain.effort}</p>
-//           <p class="card-text">${mountain.desc}</p>
-//           <p class="card-text">${mountain.coords}</p>
-//         </div>
-//       `;
-
-//       mountainList.appendChild(card);
-//     });
-//   }
-//   document.getElementById('mountainDropdown').addEventListener('change', (event) => {
-//     const selectedmountain = event.target.value;
-//     const filteredmountain = selectedmountain === 'all'
-//       ? mountainsArray
-//       : mountainsArray.filter(mountain => mountain.name === selectedmountain);
-//     displayCourses(filteredmountain);
-//   });
