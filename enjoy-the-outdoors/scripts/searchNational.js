@@ -10,9 +10,9 @@ const info = document.getElementById('info');
 function populateStates() {
     dropdownLabel.textContent = 'Choose State:';
     dropdown.innerHTML = '';
-    nationalParksArray.forEach(state => {
+    locationsArray.forEach(state => {
         const option = document.createElement('option');
-        option.textContent = state.State; // Assuming 'State' is the key for state names
+        option.textContent = state; 
         dropdown.appendChild(option);
     });
 }
@@ -20,7 +20,6 @@ function populateStates() {
 function populateParkTypes() {
     dropdownLabel.textContent = 'Choose Park Type:';
     dropdown.innerHTML = '';
-    // Assuming parkTypesArray is defined somewhere in your code
     parkTypesArray.forEach(type => {
         const option = document.createElement('option');
         option.textContent = type;
