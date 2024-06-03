@@ -9,7 +9,7 @@ const info = document.getElementById('info');
 
 function populateStates() {
     dropdownLabel.textContent = 'Choose State:';
-    dropdown.innerHTML = '';
+    dropdown.innerHTML = '<option value = "">Select a state </option>';
     locationsArray.forEach(state => {
         const option = document.createElement('option');
         option.textContent = state; 
